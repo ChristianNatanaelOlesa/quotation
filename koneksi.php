@@ -2,7 +2,7 @@
 <?php
 	$host="localhost";
 	$user="root";
-	$pass="";
+	$pass="Neoseeker96";
 	$database="quotation";
 	$mysqli=new mysqli($host,$user,$pass,$database);
 	if (mysqli_connect_errno()) {

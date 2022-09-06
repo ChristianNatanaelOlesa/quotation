@@ -37,7 +37,7 @@
 	$bulan = date('n');
 	$romawi = getRomawi($bulan);
 	$tahun = date ('Y');
-	$format_trans_rev = "/PEN/".$romawi."/".$tahun."-".;
+	$format_trans_rev = "/PEN/".$romawi."/".$tahun."-";
 
 	// membaca kode / nilai tertinggi dari penomoran yang ada didatabase berdasarkan tanggal
 	$query_trans_rev=$mysqli->query("select max(transid_rev) as maxTransRev FROM transaction_rev WHERE month(transdate)='$bulan'");
